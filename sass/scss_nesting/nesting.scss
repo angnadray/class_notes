@@ -1,0 +1,42 @@
+$bg-color1: blue;
+$f-color: white;
+$txt-ali: center;
+$family: arial;
+$bg-color2: purple;
+
+nav {
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: $bg-color1;
+    }
+
+    li {
+        float: left;
+        a {
+            display: block;
+            color: $f-color;
+            text-align: $txt-ali;
+            padding: 14px 16px;
+            text-decoration: none;
+            font: {
+                family: $family;
+                size: 1rem;
+                weight: bold; 
+            }
+        }
+        a:hover {
+            background-color: $bg-color2;
+        }
+    }
+}
+.paragraph {
+    font: {
+        family: $family;
+        size: 1rem;
+        weight: normal; 
+    }
+}

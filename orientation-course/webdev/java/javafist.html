@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Java</title>
+</head>
+
+<body>
+    <img src="brown bear.jpg" id="image" title="click to toggle image">
+    <script>
+        var img = document.getElementById("image");
+        img.addEventListener("click", changeImage);
+        function changeImage() {
+            if (img.getAttribute("src") == "brown bear.jpg") {
+                img.src = "polarbear.jpg";
+            } else {
+                img.src = "brown bear.jpg"
+            }
+        }
+    </script>
+</body>
+
+</html>

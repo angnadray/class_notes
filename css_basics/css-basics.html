@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #idSelector {
+            background-color: blueviolet;
+        }
+        .classSelector {
+            background-color: green;
+        }
+        .classFont {
+            font-size: 24px;
+            font-weight: lighter;
+        }
+        p:hover {
+            background-color: brown;
+        }
+        .pseudoClass:hover {
+            background-color: aqua;
+        }
+        .pseudoElement:first-line {
+            font-size: 12px;
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CSS basics</h1>
+    <h2>IDs and Class selectors</h2>
+    <p id="idSelector">This element has an id</p>
+    <p class="classSelector classFont">This element has a class</p>
+    <p class="classSelector classFont" id="idSelector">This element has an id and two classes.
+    But the id is overwriting the first class.</p>
+
+    <!--a selector can have only one id but multiple classes-->
+    <!--we use class selectors more than the id selector, id are for very specific reasons.
+    When the id ans class in one element have the same property, css give more relevance
+    to the id overwriting the class property-->
+    <!--inline styling ovewrites the properties given in the header or style sheet-->
+    <h2>Pseudo Class Selectors</h2>
+    <p class="pseudoClass">like hover, where elements change properties when the mouse is over. It doesn't work
+    on elements with an id with the same property. Nothing ovewrites an id.
+    </p>
+    <p class="pseudoElement">pseudo elements change properties inside one specific <br>
+    element in therms of 1st line, 2nd line, etc.</p>
+
+</body>
+</html>

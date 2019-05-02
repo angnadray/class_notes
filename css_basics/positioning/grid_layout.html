@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Based Layout</title>
+    <style>
+        * {
+            border: 1px solid gray;
+        }
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .grid {
+            margin: 0 auto;
+            max-width: 1200px;
+            width: 100%;
+        }
+        .row {
+            width: 100%;
+            margin-bottom: 20px;
+            display: flex;
+        }
+        .col-12 {
+            width: 100%;
+            background-color: aquamarine;
+        }
+        .col-11 {
+            width: 91.66%;
+            background-color: lightseagreen;
+        }
+        .col-10 {
+            width: 83.33%;
+            background-color: lightpink;
+        }
+        .col-9 {
+            width: 75%;
+            background-color: lightskyblue;
+        }
+        .col-8 {
+            width: 66.66%;
+            background-color: limegreen;
+        }
+        .col-7 {
+            width: 58.33%;
+            background-color: lightsteelblue;
+        }
+        .col-6 {
+            width: 50%;
+            background-color: lightgreen;
+        }
+        .col-5 {
+            width: 41.66%;
+            background-color: lightcyan;
+        }
+        .col-4 {
+            width: 33.33%;
+            background-color: lightsalmon;
+        }
+        .col-3 {
+            width: 25%;
+            background-color: palevioletred;
+        }
+        .col-2 {
+            width: 16.66%;
+            background-color: peru;
+        }
+        .col-1 {
+            width: 8.33%;
+            background-color: palegoldenrod;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+            <div class="row">
+                <div class="col-12">12 columns</div>
+            </div>
+        <div class="row">
+            <div class="col-2">2 columns</div>
+            <div class="col-10">10 columns</div>
+        </div>
+        <div class="row">
+            <div class="col-3">3 columns</div>
+            <div class="col-6">6 columns</div>
+            <div class="col-3">3 columns</div>
+        </div>
+        <div class="row">
+            <div class="col-4">4 columns</div>
+            <div class="col-4">4 columns</div>
+            <div class="col-4">4 columns</div>
+        </div>
+        <div class="row">
+            <div class="col-6">6 columns</div>
+            <div class="col-4">4 columns</div>
+            <div class="col-2">2 columns</div>
+        </div>
+        <div class="row">
+            <div class="col-3">3 columns</div>
+            <div class="col-3">3 columns</div>
+            <div class="col-3">3 columns</div>
+            <div class="col-3">3 columns</div>
+        </div>
+        <div class="row">
+            <div class="col-6">6 columns</div>
+            <div class="col-6">6 columns</div>
+        </div>
+    </div>
+</body>
+</html>

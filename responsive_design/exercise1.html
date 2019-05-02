@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1 Grid Layout</title>
+    <style>
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .grid {
+            margin: 0 auto;
+            width: 100%;
+            border: 1px solid black;
+        }
+        .row {
+            width: 100%;
+            display: flex;
+            justify-items: center;
+        }
+        .nav {
+            width: 100%;
+            background-color: black;
+            color: white;
+            margin-bottom: 3vh;
+            font-weight: bold;
+            padding: 0.5em;
+            display: flex;
+        }
+        .nav :nth-child(2) {
+            margin-left: 70vw;
+        }
+        .content {
+            width: 80%;
+        }
+        .foot {
+            background-color: grey;
+            padding: 0.1em;
+        }
+        .button {
+            background-color: blue;
+            color: white;
+            border-radius: 5px;
+            width: 10vw;
+            text-align: center;
+            padding: 0.5em;
+            font-weight: bold;
+        }
+        img {
+            width: 100%;
+        }
+        .col-12 {
+            width: 100%;
+            background-color: lightslategray;
+            padding: 3em 1em;
+            margin-bottom: 3vh;
+        }
+        .col-4 {
+            width: 33.33%;
+            border: 1px solid darkgray;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+        <div class="grid">
+            <div class="nav">
+                <div>Navigation Bar</div>
+                <div>About Contact Blog</div>
+            </div>   
+            <div class="content">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>A Warm Welcome</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum!</p>
+                        <p class="button">Call To Action</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <div><img src="card.jpg" alt="imagen"></div>
+                        <div><h2>Card Title</h2></div>
+                        <div><p>Lorem ipsum dolor sit amet consectetur adipis. Vertrum!</p></div>
+                        <div class="foot"><p class="button">Call To Action</p></div>
+                    </div>
+                    <div class="col-4">
+                        <div><img src="card.jpg" alt="imagen"></div>
+                        <div><h2>Card Title</h2></div>
+                        <div><p>Lorem ipsum dolor sit amet consectetur adipis. Vertrum!</p></div>
+                        <div class="foot"><p class="button">Call To Action</p></div>
+                    </div>
+                    <div class="col-4">
+                        <div><img src="card.jpg" alt="imagen"></div>
+                        <div><h2>Card Title</h2></div>
+                        <div><p>Lorem ipsum dolor sit amet consectetur adipis. Vertrum!</p></div>
+                        <div class="foot"><p class="button">Call To Action</p></div>
+                    </div>
+                    <div class="col-4">
+                        <div><img src="card.jpg" alt="imagen"></div>
+                        <div><h2>Card Title</h2></div>
+                        <div><p>Lorem ipsum dolor sit amet consectetur adipis. Vertrum!</p></div>
+                        <div class="foot"><p class="button">Call To Action</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

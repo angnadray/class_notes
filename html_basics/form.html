@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        
+        /* Create two equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 50%;
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .title {
+            color: white;
+            background-color: #333333;
+            padding: 5px 10px;
+        }
+        .outer {
+            padding: 0px 50px;
+        }
+        .subtitle {
+            color: #1047bd;
+        }
+        .button {
+            background-color: green;
+            color: white;
+            padding: 7px 20px;
+            font-size: 14px;
+            border: none;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h3 class="title">Forms</h3>
+    <div class="outer">
+    <div class="row">
+        <div class="column" style="background-color:none">
+            <h4 class="subtitle">Personal Data</h4>
+            First Name:<br> <input type="text" size="60"><br><br>
+            Last Name:<br> <input type="text" size="60"><br><br>
+            Street:<br> <input type="text" size="60"><br><br>
+            Zipcode:<br> <input type="text" size="60"><br><br>
+            City:<br> <input type="text" size="60"><br><br>
+            Phone:<br> <input type="text" size="60"><br><br> 
+            Email:<br> <input type="text" size="60"><br><br>
+            Comments:<br> <textarea name="message" rows="5" cols="60" placeholder="Tell us more about colors, etc"></textarea><br><br>
+        </div>
+        <div class="column" style="background-color:none">
+            <h4 class="subtitle">Products</h4>
+            Web Design<br><br>
+            <input type="radio" name="webdesign" id="individual" value="individual">
+            <label for="individual">Individual</label>
+            <input type="radio" name="webdesign" id="template" value="template">
+            <label for="template">Template</label><br><br>
+            Web Development<br><br>
+            <input type="checkbox" name="webdevelopment" id="htmlandcss" value="htmlandcss">
+            <label for="htmlandcss">HTML & CSS</label><br><br>
+            <input type="checkbox" name="webdevelopment" id="javascript" value="javascript">
+            <label for="htmlandcss">JavaScript</label><br><br>
+            <input type="checkbox" name="webdevelopment" id="mongodb" value="mongodb">
+            <label for="htmlandcss">MongoDB</label><br><br>
+            Project start:<br> <input type="text" placeholder="tt.mm.jj" size="60"><br><br>
+            Project end:<br> <input type="text" placeholder="tt.mm.jj" size="60"><br><br>
+            Category<br>
+            <select name="Category">
+                <option value="work">Work</option>
+                <option value="business">Business</option>
+                <option value="personal" selected>Personal</option>
+                <option value="entertaiment">Entertainment</option>
+            </select><br><br>
+            <button class="button" type="button" onclick="alert('Your request has been sent')">Order our services</button>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

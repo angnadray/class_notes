@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The CSS Flexbox Concept</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        main {
+            height: 100vh;
+        }
+
+        section {
+            background: #bada55;
+            border: 1px solid #666;
+            padding: 10px;
+            text-align: center;
+            margin: 10px;
+        }
+
+        main {
+            /* Flexbox Styles go here */
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            /* Put the content at the start of the box */
+        }
+
+        section {
+            flex-basis: calc(25% - 48px);
+        }
+
+        .item3 {
+            flex-basis: calc(50% - 44px);
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="item1">1</section>
+        <section class="item2">2</section>
+        <section class="item3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</section>
+        <section class="item4">4</section>
+        <section class="item5">5</section>
+        <section class="item6">6</section>
+        <section class="item7">7</section>
+        <section class="item8">8</section>
+        <section class="item9">9</section>
+        <section class="item10">10</section>
+        <section class="item11">11</section>
+        <section class="item12">12</section>
+    </main>
+</body>
+
+</html>

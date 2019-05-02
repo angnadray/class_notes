@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS selectors</title>
+    <style>
+        h1 {
+            color: brown;
+        }
+        p[target=hola] {
+            color:brown;
+        }
+        p[target=who] {
+            background-color: blueviolet;
+        }
+        [title~=flower] {
+            color: blue;
+        }
+        div p {
+            color: darkcyan;
+        }
+        div+p {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <p>* target every single element on the page. Better to not use
+        unless really necessary because it makes the loading heavy.
+        #container* { target all inside this container, still better to not use}
+    </p>
+    <h2>CSS Attribute Selectors</h2>
+    <p>Id selectors identify an unique elements</p>
+    <p target="who">class selectors, apply for a group of elements</p>
+    <p>type selectors overwrite the specific format of an element</p>
+    <p target="hola">attribute selectors, to select </p>
+    <p>[title~=flower] {
+            border: 5px solid yellow;
+          } selects only the elements with the target flower in them</p>
+    <p title="flower">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Commodi non sapiente aspernatur possimus itaque deserunt ducimus optio alias quasi ex.</p>
+    <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, aliquid.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <span><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p></span>
+    </div>
+    <!-- < targets directly the children and not the descendants-->
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, non!</p>
+    <!-- div+p targets the sibling immediate next to div-->
+    <!-- div~p targets all the siblings next to div-->
+    <!--targets the specific word just like the ~ selector-->
+
+
+</html>

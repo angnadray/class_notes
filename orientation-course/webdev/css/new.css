@@ -1,0 +1,54 @@
+body {
+    background-image: url(../images/dev1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin: 0;
+}
+
+a.jump {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: brown;
+    color: wheat;
+    margin: 0 auto;
+    width: 100px;
+    display: block;
+    text-align: center;
+}
+
+a:hover {
+    background-color: chocolate;
+}
+
+a:active {
+    background-color: aqua;
+}
+
+h1 {
+    font-family: 'Charmonman', cursive;
+    color: #999;
+    text-align: center;
+    margin: 0;
+}
+
+p.first {
+    color: rgb(111, 149, 6);
+    margin: 20px auto;
+    border: 2px solid rgb(0, 0, 255);
+    padding: 30px;
+    width: 50%;
+    max-width: 300px;
+    height: 50px;
+    overflow: hidden;
+}
+
+p {
+    line-height: 20px;
+    text-align: right;
+    letter-spacing: -1px;
+    word-spacing: 10px;
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.7);
+}

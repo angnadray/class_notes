@@ -1,0 +1,47 @@
+body {
+    background-color: peachpuff;
+    margin: 10px;
+    color: white;
+}
+.container div {
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 2em;
+}
+.container div:nth-child(even) {
+    background-color: blueviolet;
+}
+.container div:nth-child(odd) {
+    background-color: plum;
+}
+.container {
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: [first] 1fr [second] 3fr [third] 4fr [fourth] 4fr [fifth];
+    grid-template-rows: [row1] 40px [row2] 200px [row3] 30px [row4];
+}
+.header {
+    grid-column-start: first;
+    grid-column-end: fifth;
+    grid-row-start: row1;
+    grid-row-end: row2;
+}
+.menu {
+    grid-column-start: fourth;
+    grid-column-end: fifth;
+    grid-row-start: row2;
+    grid-row-end: row3;
+}
+.content {
+    grid-column-start: first;
+    grid-column-end: fourth;
+    grid-row-start: row2;
+    grid-row-end: row3;
+}
+.footer {
+    grid-column-start: first;
+    grid-column-end: fifth;
+    grid-row-start: row3;
+    grid-row-end: row4;
+}

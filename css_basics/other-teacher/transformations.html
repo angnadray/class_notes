@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformation</title>
+    <style>
+        div {
+            margin: auto;
+            margin-top: 10%;
+            height: 200px;
+            width: 200px;
+            display: block;
+            background-color: royalblue;
+            transition: 4s;
+            box-shadow: 8px 8px 6px gray;
+            /* cubic-bezier defines the way and timeing the transformation goes */
+            transition-timing-function: cubic-bezier(0.1,0.7, 2.0, 0.1)
+            overflow: auto;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+        div:hover {
+            /* transform: translate(50px, 50px); */
+            transform: scale(1.5) rotate(360deg);
+            /* transform: skew(70deg); */
+            background-color: blueviolet;
+            border-radius: 50%;
+            box-shadow: 10px 10px 8px gray;
+        }
+        h1:hover {
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Click on this</h1>
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Reprehenderit nobis molestias aliquam a eligendi? 
+        Animi eveniet doloremque laudantium molestiae quae.</p>
+    </div>
+</body>
+</html>

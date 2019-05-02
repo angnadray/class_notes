@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selectors</title>
+    <style>
+        .button {
+            background-color: blueviolet;
+            color: white;
+            padding: 7px 20px;
+            font-size: 14px;
+            border: none;
+            border-radius: 3px;
+        }
+        .button:nth-of-type(2) {
+            background-color: brown;
+            color: white;
+            padding: 7px 20px;
+            font-size: 14px;
+            border: none;
+            border-radius: 3px;
+        }
+        .button:nth-of-type(3) {
+            background-color: royalblue;
+            color: white;
+            padding: 7px 20px;
+            font-size: 14px;
+            border: none;
+            border-radius: 3px;
+        }
+        .button:hover {
+            background-color: gray;
+            color: black;
+        }
+        a:visited {
+        color: #333333;
+        }
+        /* mouse over link */
+        a:hover {
+        color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selectors</h1>
+    <section>
+        <button class="button" type="button">go to google</button>
+        <button class="button" type="button">go to wikipedia</button>
+        <button class="button" type="button">go to yahoo</button>
+    </section>
+    <section>
+        <ul>
+            <li><a href="https://www.w3schools.com/css/css_link.asp" target="blank">CSS Links</a></li>
+            <li><a href="https://www.w3schools.com/tags/tag_link.asp" target="blank">HTML Links</a></li>
+            <li><a href="https://www.w3schools.com/cssref/css_selectors.asp" target="blank">Selectors</a></li>  
+        </ul>
+        <p>An interesting article on links in CSS</p>
+        <p>Read more about linking sites using HTML</p>
+        <p>Get a closer loor at what selectors are</p>
+    </section>
+</body>
+</html>

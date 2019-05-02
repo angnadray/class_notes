@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+<html lang="en"> <!-- the spacing is not correct in this file when the brakes are removed -->
+<head>
+    <meta charset="UTF-8">
+    <title>Form Exampple</title>
+    <style>
+        form {
+            font-family: sans-serif;
+        }
+        label {
+            display: inline-block;
+            width: 200px;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+        }
+        input[type="text"], 
+        input[type="email"],
+        input[type="number"] {
+            width: 250px;
+            padding: 10px;
+            margin: 8px 0 20px 0;
+        }
+        textarea {
+            width: 250px;
+            height: 200px;
+            padding: 10px;
+            vertical-align: top;
+            margin-bottom: 12px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: green;
+        }
+        input:hover, textarea:hover {
+            background-color: aquamarine;
+        }
+        input:focus, textarea:focus {
+            background-color: aquamarine;
+        }
+        a[target] {color: aqua}
+        
+    </style>
+</head>
+
+<body> 
+    <form>
+        <label>Your Name</label>
+        <input type="text" name="name" placeholder="Name"><br><br>
+        <label>Your E-mail Adress</label>
+        <input type="email" name="email" placeholder="E-mail"><br><br>
+        <label>Your Message</label>
+        <textarea name="message" placeholder="Write your text here"></textarea><br><br>
+        <label>News Letter</label>
+        <input type="checkbox" name="news"><br><br>
+        <label>Gender:</label>
+        <label>Female</label>
+        <input type="radio" name="gender" value="female">
+        <label>Female</label>
+        <input type="radio" name="gender" value="male"><br><br>
+        <label>Your Postal Code</label>
+        <input type="number" name="pc"><br><br><!-- allow only to type numkbers -->
+        <label>Your Birthday</label>
+        <input type="date" name="birthday"><br><br>
+        <select name="country">
+            <option>Select your country</option>
+            <option value="it">Italy</option>
+            <option value="fr">France</option>
+            <option value="gr">Greece</option>
+        </select><br><br>
+        <input type="submit" value="SEND">
+    </form>
+    <a href="">Internal Link</a>
+    <a href="" target="_blank">External Link</a>
+</body>
+</html>

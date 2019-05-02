@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Background</title>
+    <style>
+        body {
+            /* to put an image over other image */
+            background: url(./assets/bear2.gif) no-repeat, url(./assets/ice.jpg)blue no-repeat;
+            /* the first iamge shows on top of the second one */
+            background-size: 300px, cover;
+            /* the firs value is for the first image and the second one is the value for the
+            background image or second one in this case */
+            background-position: 100px 50px, top;
+        }
+    </style>
+</head>
+<body>
+    <h2>background gradient</h2>
+    <p>background-image: linear-gradient(direction, red, blue)</p>
+    <h2>background position</h2>
+    <p>background-position: 100px 50px;
+    moves the image 100px from the left to the right and 50px from the to top to down.
+    </p>
+</body>
+</html>

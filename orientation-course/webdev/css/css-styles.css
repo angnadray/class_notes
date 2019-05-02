@@ -1,0 +1,42 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("forest.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin: 0;
+}
+h1 {
+    color: forestgreen;
+    text-align: center;
+    margin: 0;
+}
+a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: red;
+}
+a:hover {
+    background-color: aquamarine;
+}
+p.first {
+    color: rgb(111, 149, 6);
+    margin: 20px;
+    border: 2px solid rgb(0,0,255);
+    padding: 30px;
+    width: 50%;
+    max-width: 300px;
+}
+p {
+    color: rgb(255, 149, 0);
+    background-color: rgba(255, 255, 255, 0.7);
+    line-height: 10px;
+}

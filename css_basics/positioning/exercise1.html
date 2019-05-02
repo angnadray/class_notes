@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Posistion Exercise 1</title>
+   <style>
+
+       * {
+           margin: 0;
+           padding: 0;
+       }
+
+       div[class] {
+           display: inline-block;
+           width: 46vw;
+           margin-top: 5vh;
+           vertical-align: middle;
+       }
+
+       img {
+           border: solid gray 1px;
+           box-shadow: black 2px 2px 2px;
+       }
+
+       .first {
+           position: relative;
+       }
+
+       .first>img {
+           width: 40vw;
+           margin: 2vh 3vw;
+
+       }
+
+       .first img:last-child {
+           position: absolute;
+           width: 15vw;
+           top: 3vh;
+           right: 1vw;
+       }
+
+       .second img {
+           width: 10vw;
+           display: inline-block;
+           margin: 10vh 2vw;
+
+
+       }
+
+       .down {
+           position: relative;
+           top: 9vh;
+       }
+
+       .up {
+           position: relative;
+           bottom: 9vh;
+
+       }
+
+   </style>
+</head>
+<body>
+
+   <div class="first">
+       <img src="assets/ocean.jpg">
+       <img src="assets/bear2.gif">
+   </div>
+
+   <div class="second">
+       <div>
+           <img src="assets/bear.jpeg">
+           <img class="down" src="assets/twitterbackground.png">
+           <img src="assets/bear.jpeg">
+       </div>
+       <div>
+           <img src="assets/bear.jpeg">
+           <img class="up" src="assets/twitterbackground.png">
+           <img src="assets/bear.jpeg">
+       </div>
+   </div>
+
+</body>
+</html>

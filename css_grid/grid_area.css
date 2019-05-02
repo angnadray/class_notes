@@ -1,0 +1,43 @@
+body {
+    background-color: peachpuff;
+    margin: 10px;
+    color: white;
+}
+.container div {
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 2em;
+}
+.container div:nth-child(even) {
+    background-color: blueviolet;
+}
+.container div:nth-child(odd) {
+    background-color: plum;
+}
+.container {
+    display: grid;
+    grid: 3px;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px auto 40px;
+    grid-template-areas: 
+    "h h h h h h h h h h h h"
+    /* "m m m m m m m m m m m m"
+    "c c c c c c c c c c c c" takes the whole 12 columns*/
+    "c c c c c c c c c c c m"
+    "f f f f f f f f f f f f"
+    /* ". f f f f f f f f f f ."  the dot creates empty spaces*/
+}
+.header {
+    grid-area: h;
+}
+.menu {
+    grid-area: m;
+}
+.content {
+    grid-area: c;
+}
+.footer {
+    grid-area: f;
+}

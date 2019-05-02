@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Example</title>
+</head>
+
+<body>
+
+    <form>
+
+        <label>Your Name</label>
+        <input maxlength="10" type="text" name="name" required placeholder="Name"><br>
+        <label>Your E-Mail adress</label>
+        <input type="email" name="email" required><br>
+        <label>Your message</label>
+        <textarea name="message"></textarea><br>
+        <label>Newsletter</label>
+        <input type="checkbox" name="news"><br>
+        <label>Gender:</label>
+        <label>Female</label>
+        <input type="radio" name="gender" value="female">
+        <label>Male</label>
+        <input type="radio" name="gender" value="male"><br>
+        <label for="post">Your postal code</label>
+        <input type="number" name="pc" id="post" ><br>
+        <label>Your birthday</label>
+        <input type="date" name="birthday">
+        <br>
+        <select name="country">
+            <option>Select your country</option>
+            <option value="it">Italy</option>
+            <option value="fr">France</option>
+            <option value="gr">Greece</option>
+        </select><br>
+        <input type="submit" value="SEND">
+    </form>
+
+</body>
+</html>

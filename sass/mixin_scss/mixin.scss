@@ -1,0 +1,36 @@
+/* mixing is used to include various values in the same group */
+@mixin paragraph {
+    color: blue;
+    font: {
+        size:50px;
+        family:"Roboto";
+    }
+}
+
+@mixin border {
+    border: {
+        color: yellow;
+        width: 5px;
+        style: solid;
+    }
+}
+
+/* this type of mixing is used to be able to change later some of the values by giving
+a variable instead of a fixed value */
+@mixin box($border-color, $border-padding) {
+    border: 10px solid $border-color;
+    padding: $border-padding;
+    box-shadow: 0 0 30px black;
+}
+
+p {
+    @include paragraph;
+    @include border;
+}
+
+.container {
+    @include box(green, 10px);
+}
+.child {
+    @include box(pink,5px)
+}

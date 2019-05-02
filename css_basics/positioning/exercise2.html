@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Positioning Exercise 2</title>
+   <style>
+       * {
+           margin: 0;
+           padding: 0;
+           text-align: center;
+       }
+
+       body {
+           background-color:darkslategray;
+       }
+
+       .bigbox {
+           background-color: white;
+           width: 50vw;
+           margin: 2vw auto;
+           position: relative;
+       }
+
+       .bigbox>* {
+           margin: 5vh 0vw;
+       }
+
+       .bigbox>div {
+           height: 30vh;
+           width: 15vw;
+           background-color:darkcyan;
+           color: white;
+       }
+
+       .bigbox div:first-of-type {
+           position: relative;
+           right: 5vw;
+           top: 5vh;
+       }
+
+       .bigbox div:last-of-type {
+           position: absolute;
+           right: 0;
+           top: 3vh;
+       }
+
+
+   </style>
+</head>
+<body>
+   <div class="bigbox">
+       <h1>Css Positioning</h1>
+
+       <h2>Relative Positioning</h2>
+
+       <div class="relative">
+           <p>Hello, i am relative.</p>
+       </div>
+
+       <h2>Absolute Positioning</h2>
+
+       <div class="absolute">
+           <p>Hello, I am absolute.</p>
+       </div>
+   </div>
+
+
+</body>
+</html>

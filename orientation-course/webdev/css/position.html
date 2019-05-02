@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        img {
+            width: 100%;
+        }
+        figure { /*figure is a container*/
+            width: 300px;
+            position: relative; 
+            height: 240px;
+            overflow: hidden;
+        }
+        figcaption { /*figcaption is the caption on the image*/
+            position: absolute;
+            top: 320px;
+            width: 100%;
+            height: 20px;
+            background-color: rgba(0,0,0,0.7);
+            padding: 10px;
+            color: white;
+            font-family: sans-serif;
+            transition: all 0.5s ease-in;
+        }
+        figure:hover figcaption {
+            top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <figure>
+        <img src="polarbear.jpg">
+        <figcaption>Digital Orientation Course</figcaption>
+    </figure>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Typography</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <style>
+        .font-color {
+            color: rgb(50, 78, 90);
+        }
+        .font-color h2 {
+            color: rgb(12, 98, 89);
+            opacity: 0,5;
+        }
+        .font-size {
+            color: blue;
+        }
+        .font-size h2 {
+        }
+        .given-size {
+            font-size: 2em;
+        }
+        .percent {
+            font-size: 90%;
+        }
+        .large {
+            font-size: x-large;
+        }
+        .font-style {
+            font-style: normal;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .font-weight {
+            font-weight: 800;
+        }
+        .letter-spacing {
+            letter-spacing: 5px;
+        }
+        .line-height p {
+            line-height: 40px;
+            border: 1px solid black;
+        }
+        .text-indent p {
+            text-indent: 40px;
+            color: blueviolet
+        }
+        .text-shadow h2 {
+            text-shadow: 2px 2px 3px royalblue;
+        }
+        .text-shadow p {
+            color: green;
+        }
+        .text-transform p {
+            text-transform: capitalize;
+        }
+        .text-transform .uppercase {
+            text-transform: uppercase;
+        }
+        .font-family {
+            font-family: 'Muli', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Typography</h1>
+    <div class="font-color">
+    <h2>Font-color</h2>
+    <p>color 1</p>
+    </div>
+    <div class="font-size">
+        <h2>Font-Size</h2>
+        <p>Default size of the h2</p>
+        <h2 class="given-size">Font-Size</h2>
+        <p>Same h2 but with a given size in em units</p>
+        <!--em units are like a % relative to the parent container of the element-->
+        <h2 class="percent">Font-Size in %</h2>
+        <p>Font size units with %</p>
+        <h2>Font-Size using x-large</h2>
+        <p class="large">Font size using x-large</p>
+    </div>
+    <div class="font-style">
+            <h2>Font-Style-Normal</h2>
+            <p>Style of font when using normal</p>
+            <h2 class="italic">Font-Style-Italic</h2>
+            <p>Style of font when using italic</p>
+    </div>
+    <div class="font-weight">
+            <h2>Font-Weight</h2>
+            <p>Style of font when using font weight 800</p>
+    </div>
+    <div class="letter-spacing">
+            <h2>Letter Spacing</h2>
+            <p>Style which changes the spacing between letters</p>
+    </div>
+    <div class="line-height">
+            <h2>Line-height</h2>
+            <p>Defines the height of the line of text,
+            not the size of the text but the line containing the text.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
+            laudantium maiores architecto ipsa facere perspiciatis quam numquam
+            consequatur debitis laboriosam facilis consectetur provident expedita
+            qui sed quas amet eum dolor.</p>
+    </div>
+    <div class="text-indent">
+            <h2>Text Indent</h2>
+            <p>Defines the indentation of the element's first line of text</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
+            laudantium maiores architecto ipsa facere perspiciatis quam numquam
+            consequatur debitis laboriosam facilis consectetur provident expedita
+            qui sed quas amet eum dolor.</p>
+    </div>
+    <div class="text-shadow">
+            <h2>Text Shadow</h2>
+            <p>Defines the shadow of the text content.</p>
+            <p>text-shadow: 2px 2px 3px royalblue; the first one is for the horizontal value
+            and the second one is for the vertival value, the 3rd one is for blur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
+            laudantium maiores architecto ipsa facere perspiciatis quam numquam
+            consequatur debitis laboriosam facilis consectetur provident expedita
+            qui sed quas amet eum dolor.</p>
+    </div>
+    <div class="text-transform">
+        <h2>Text transform</h2>
+        <p>Defines how the text content should be transformed.</p>
+        <p>Capitalize changes the first letter of every work to capital and uppercase changes
+        every word into capital.</p>
+        <p class="uppercase">Uppercase ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
+        laudantium maiores architecto ipsa facere perspiciatis quam numquam
+        consequatur debitis laboriosam facilis consectetur provident expedita
+        qui sed quas amet eum dolor.</p>
+    </div>
+    <div class="font-family">
+        <h2>Text transform</h2>
+        <p>Defines how the text content should be transformed.</p>
+        <p>Capitalize changes the first letter of every work to capital and uppercase changes
+        every word into capital.</p>
+    </div>
+</body>
+</html>

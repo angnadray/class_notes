@@ -1,0 +1,20 @@
+/* mixing is used to include various values in the same group */
+/* this type of mixing is used to be able to change later some of the values by giving
+a variable instead of a fixed value */
+p {
+  color: blue;
+  font-size: 50px;
+  font-family: "Roboto";
+  border-color: yellow;
+  border-width: 5px;
+  border-style: solid; }
+
+.container {
+  border: 10px solid green;
+  padding: 10px;
+  box-shadow: 0 0 30px black; }
+
+.child {
+  border: 10px solid pink;
+  padding: 5px;
+  box-shadow: 0 0 30px black; }

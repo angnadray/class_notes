@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Microsite</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(workplace-2303851_1920.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            margin: 20px;
+        }
+
+        .header {
+            background-color: none;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .column {
+            float: left;
+            padding: 10px 30px;
+        }
+
+        .column.side {
+            width: 25%;
+            text-align: center;
+        }
+
+        img.logo {
+            width: 300px;
+            height: auto;
+            right: 50px;
+            padding: 20px 0;
+        }
+
+        .column.middle {
+            width: 50%;
+            text-align: left;
+            color: #313335;
+            background-color: hsla(350,50%,50%,0.5);
+            border-radius: 12px;
+            padding: 30px 30px 50px 50px;
+        }
+
+        .column.middle h4 {
+            color: #253B80;
+        }
+
+        .column.middle p2 {
+            color: #253B80;
+            font-style: italic;
+        }
+
+        .column.side.left {
+            color: #253B80;
+            font-style: italic;
+            font-size: 18px;
+            padding: 60px 10px 30px 10px;
+        }
+
+        .column.side.left p1 {
+            font-style: normal;
+            color: #7d7d7d;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width: 1280px) {
+
+            .column.side,
+            .column.middle {
+                width: 100%;
+            }
+        }
+
+        .footer {
+            background-color: none;
+            padding: 0 0 40px 30px;
+            text-align: center;
+        }
+
+        .button {
+            background-color: #253B80;
+            display: block;
+            border: none;
+            color: white;
+            padding: 15px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 12px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            width: 300px;
+        }
+
+        .button:hover {
+            background-color: white;
+            border: 2px solid #253B80;
+            color: #253B80;
+            font-weight: bolder;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="me.png" class="picture">
+    </div>
+
+    <div class="row">
+        <div class="column side left">
+            <p>"Wir halten Bildung für die Schlüssel zu einem erfolgreichen sozialen und beruflichen Leben."</p>
+            <p1>Digital Career Intitute</p1>
+        </div>
+        <div class="column middle">
+            <h4>Sehr geehrter Herr Dreyer,</h4>
+            <p>Vielen Dank für die Unterstützung, die Sie mir bisher gegeben haben, und für die großartige Chance, weiter zu lernen.</p>
+            <p>Mit freundlichen Grüßen,</p>
+            <p2>Angie Rey Romero</p2>
+        </div>
+        <div class="column side right">
+            <img src="cropped-Logo_blue.png" class="logo">
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="https://digitalcareerinstitute.org/kurse/jahreskurs/" target="_blank" class="button">mehr über den Kurs</a>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+.projetcs {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+
+.pics {
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 10px;
+}
+
+.pics img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 800px) {
+    .pics {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .pics {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+</style>
+<body>
+
+<div class="projetcs"> 
+  <div class="pics">
+   <h2>Web Design</h2>
+    <img src="computer-1231889_1920.jpg" style="width:100%">
+    <img src="computer-1245714_1920.jpg" style="width:100%">
+    <img src="computer-1231889_1920.jpg" style="width:100%">
+    
+  </div>
+  <div class="pics">
+   <h2>Web Development</h2>
+    <img src="computer-1231889_1920.jpg" style="width:100%">
+    <img src="computer-1245714_1920.jpg" style="width:100%">
+    <img src="computer-1245714_1920.jpg" style="width:100%">
+   
+  </div>  
+  <div class="pics">
+  <h2>Ad Desing</h2>
+   <img src="computer-1231889_1920.jpg" style="width:100%">
+    <img src="computer-1245714_1920.jpg" style="width:100%">
+    <img src="computer-1231889_1920.jpg" style="width:100%">
+   
+    
+  </div>
+  <div class="pics">
+   <h2>Online Marketing</h2>
+    <img src="computer-1231889_1920.jpg" style="width:100%">
+    <img src="computer-1245714_1920.jpg" style="width:100%">
+    <img src="computer-1245714_1920.jpg" style="width:100%">
+    
+  </div>
+</div>
+
+</body>
+</html>

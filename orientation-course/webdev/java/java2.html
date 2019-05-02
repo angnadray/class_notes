@@ -1,0 +1,68 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 24px
+        }
+
+        button {
+            background: #bada55;
+            border: 1px solid #444;
+            padding: 10px;
+            cursor: pointer
+        }
+
+        button:hover {
+            background: #badada
+        }
+
+        button:focus {
+            outline: 0
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background: red
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="btn-1"> Click Me! </button>
+    <button id="btn-2"> No, Please Click Me! </button>
+    <button id="btn-3"> You Better Click Me! </button>
+
+    <h1>A red square, isn't it?</h1>
+
+    <div></div>
+
+    <script>
+        document.getElementById("btn-1").addEventListener("click", redFunc);
+        document.getElementById("btn-2").addEventListener("click", blueFunc);
+        document.getElementById("btn-3").addEventListener("click", circleFunc);
+        var header1 = document.querySelector("h1");
+        var square=document.querySelector("div");
+        function redFunc() {
+            header1.innerHTML="Yes, it's a red square.";
+            square.removeAttribute("style")
+        }
+        function blueFunc(){
+            header1.innerHTML="No, it's a blue square.";
+            square.removeAttribute("style")
+            square.style.backgroundColor="blue";
+        }
+        function circleFunc(){
+            header1.innerHTML="No, it's a black circle.";
+            square.removeAttribute("style")
+            square.style.backgroundColor="black";
+            square.style.borderRadius="50%";
+        }
+    </script>
+
+</body>
+</html>

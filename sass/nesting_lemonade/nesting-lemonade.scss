@@ -1,0 +1,22 @@
+$txt-align: center;
+
+body {
+    text-align: $txt-align;
+
+    .banner {
+        background-image: url(./images/slice.jpg);
+        width: 100%;
+        height: 25rem;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        .slogan {
+            border: 3px solid black;
+            width: 20em;
+            height: 10em;
+            background-color: rgba(255, 255, 255, .3); 
+            position: relative;
+            left: 500px;
+        }
+    }
+    
+}
