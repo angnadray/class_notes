@@ -3,14 +3,14 @@
 /* 
  Function declaration > syntax
 
- function myFunction () {
+ function myFunction (here goes the parameters) {
   here goes the body of the function
  }
 
  Function call
 
  to use a function (it doesn't get used if we don't call for it) we call it by its name  > 
- myFuntion (); 
+ myFunction (here goes the value of the parameters); 
  */
 
 function printMessage() {
@@ -29,7 +29,7 @@ function printMessage2() {
     let myMessage = "Hello World";
     console.log(myMessage);
 } 
-printMessage2(); // we can call a function before declare it ans it works fine
+printMessage2(); // we can call a function before declare it and it works fine
 
 // SCOPE is the limit until where a function would work or not anymore
 
