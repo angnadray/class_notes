@@ -138,3 +138,49 @@
 
     console.log(fastCar.maxSpeed); // 200
     console.log(slowCar.maxSpeed); // 80
+
+
+    // ____________________Naqvi's explanation 
+
+    /* let obj={
+        a:23,
+        b:376787,
+        c:function a(){
+            console.log(this.b)
+        }
+        
+    }
+    //implicit binding
+    obj.c();
+    
+    
+    
+    
+    function foo(){
+      
+        console.log(this.b)
+    }
+    
+    
+    let obj1={
+        b:898
+    }
+    
+    //explicit bind
+    foo.call(obj1);
+    
+    
+    
+    
+    function foo2(lastname,firstname){
+        this.firstname=firstname;
+        this.lastname=lastname;
+    };
+    
+    let student=new foo2("naqvi","raza");// {firstname:"naqvi",lastname:"raza"} 
+    
+    console.log(student.lastname);
+    console.log(student.firstname)
+    let values=Object.values(student);
+    
+    console.log(values) */
