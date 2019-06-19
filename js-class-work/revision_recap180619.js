@@ -377,9 +377,9 @@ let CoffeeMachine=(callbackWater,callbackSugar,callbackCoffee)=>{
  }
  /* console.log(Add(3,4)); */
  
- let result=calculator(4,6,Product);
+ let result2=calculator(4,6,Product);
  
- console.log(result);
+ console.log(result2);
  
  
  
