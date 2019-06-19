@@ -35,6 +35,11 @@ let array1 = ['a', 'b', 'c'];
 array1.forEach(function (element) {
     console.log(`forEach -> ${element}`);
 });
+/* 
+forEach -> a
+forEach -> b
+forEach -> c
+*/
 
 
 
@@ -45,7 +50,7 @@ for (let property1 in object1) {
     string1 += object1[property1];
 }
 
-console.log(`for in -> ${string1}`);
+console.log(`for in -> ${string1}`); // for in -> 123
 
 //Nested loop
 for (let i = 1; i <= 5; i++) {
@@ -54,7 +59,33 @@ for (let i = 1; i <= 5; i++) {
         console.log(`${i} X ${j} = ${result}`);
     }
 }
-
+/* 
+1 X 1 = 1
+1 X 2 = 2
+1 X 3 = 3
+1 X 4 = 4
+1 X 5 = 5
+2 X 1 = 2
+2 X 2 = 4
+2 X 3 = 6
+2 X 4 = 8
+2 X 5 = 10
+3 X 1 = 3
+3 X 2 = 6
+3 X 3 = 9
+3 X 4 = 12
+3 X 5 = 15
+4 X 1 = 4
+4 X 2 = 8
+4 X 3 = 12
+4 X 4 = 16
+4 X 5 = 20
+5 X 1 = 5
+5 X 2 = 10
+5 X 3 = 15
+5 X 4 = 20
+5 X 5 = 25
+*/
 
 //map
 let arr = [1, 2, 3, 4];
@@ -66,7 +97,7 @@ console.log(mappedArr);
 //filter
 const arrNumbers = [1, 2, 3, 4, 324, 432, 32, 90, 80];
 const result = arrNumbers.filter(number => number > 10);
-console.log(result);
+console.log(result); // [ 324, 432, 32, 90, 80 ]
 
 const ages = [
     { name: "Jess", age: 30 },
@@ -89,14 +120,27 @@ function filterAge(object) {
 }
 const id = ages.filter(filterAge);
 
-const identity = ages.filter((a, b) => (a.age >= 18));
+const identity = ages.filter((a) => (a.age >= 18));
 // console.table(id);
 console.table(identity);
+/* 
+┌─────────┬─────────┬─────┐
+│ (index) │  name   │ age │
+├─────────┼─────────┼─────┤
+│    0    │ 'Jess'  │ 30  │
+│    1    │ 'Tess'  │ 22  │
+│    2    │ 'Vick'  │ 18  │
+│    3    │  'Mar'  │ 32  │
+│    4    │ 'Sean'  │ 41  │
+│    5    │ 'Jean'  │ 30  │
+│    6    │ 'Lewis' │ 25  │
+└─────────┴─────────┴─────┘
+*/
 
 //reduce
 const numbers = [1, 2, 3, 4, 324, 432, 32, 90, 80];
 const results = numbers.reduce((acc, cur) => acc + cur);
-console.log(results);
+console.log(results); // 968
 
 let cityPopulation = [
     {
@@ -114,7 +158,7 @@ let cityPopulation = [
 ];
 
 const totalPopulations = cityPopulation.reduce((acc, cur) => acc + cur.pop, 0);
-console.log(`total population: ${totalPopulations}`);
+console.log(`total population: ${totalPopulations}`); // total population: 6835000
 
 //sort 
 const characters = [
@@ -136,7 +180,17 @@ const oldestCharacters = characters.sort(function (a, b) {
 });
 
 console.table(oldestCharacters);
-
+/* 
+┌─────────┬───────────────────┬───────────┬───────┐
+│ (index) │       name        │ birthdate │ death │
+├─────────┼───────────────────┼───────────┼───────┤
+│    0    │   'Tom Sawyer'    │   1876    │ 1945  │
+│    1    │ 'Holden Caufield' │   1951    │ 1992  │
+│    2    │  'Bart Simpson'   │   1989    │ 2019  │
+│    3    │    'Tom Joad'     │   1939    │ 1967  │
+│    4    │  'Peter Griffin'  │   1999    │ 2019  │
+└─────────┴───────────────────┴───────────┴───────┘
+*/
 
 let shapes = [
     [5, "Pentagon"],
@@ -157,7 +211,18 @@ const sortedShapes = shapes.sort(function (a, b) {
     }
 })
 console.table(sortedShapes);
-
+/* 
+┌─────────┬────┬─────────────┐
+│ (index) │ 0  │      1      │
+├─────────┼────┼─────────────┤
+│    0    │ 3  │ 'Triangle'  │
+│    1    │ 4  │ 'Rectangle' │
+│    2    │ 5  │ 'Pentagon'  │
+│    3    │ 6  │  'Hexagon'  │
+│    4    │ 8  │  'Octagon'  │
+│    5    │ 10 │  'Decagon'  │
+└─────────┴────┴─────────────┘
+*/
 
 
 //callback function
@@ -169,8 +234,7 @@ function callFn() {
     return 'This is the callback function working.';
 }
 // calling add() function
-console.log(add(5, 6, callFn));
-
+console.log(add(5, 6, callFn)); // The sum of 5 and 6 is 11. This is the callback function working.
 
 
 //switch
@@ -232,7 +296,7 @@ function packMyThings(num) {
 }
 
 
-console.log(packMyThings(0));
+console.log(packMyThings(0)); // I'm going on a trip and taking: oops, no list!
 
 // classes : data
 let Human = class {
@@ -252,7 +316,7 @@ let Human = class {
 }
 
 const john = new Human(170, "male", "John", 15);
-console.log(john.ageCheck());
+console.log(john.ageCheck()); // John is not an adult.
 
 
 //super + extends
@@ -287,7 +351,7 @@ class Dog extends Animal {
 }
 
 let toby = new Dog("male", "Toby", 3, "husky");
-console.log(toby.ageCheck());
+console.log(toby.ageCheck()); // Toby is a fully grown husky dog
 
 // binding  
 
@@ -303,20 +367,20 @@ let eventTicket = {
     }
 }
 //this will work perfectly
-console.log(eventTicket.displayDetails());
+console.log(eventTicket.displayDetails()); // FN106H issued to Fran for Hackathon event
 
 //but what if we want to store this in a variable? 
 //won't work since `this` keyword is now assigned to the global context
 let userTicketDetails = eventTicket.displayDetails;
-console.log(userTicketDetails());
+console.log(userTicketDetails()); // undefined issued to undefined for undefined event
 
 //The bind() method creates a new function where “this” refers to the parameter in the parenthesis in the above case “eventTicket”. This way the bind() method enables calling a function with a specified “this” value.
 
 let userTicket = eventTicket.displayDetails.bind(eventTicket);
-console.log(userTicket());
+console.log(userTicket()); // FN106H issued to Fran for Hackathon event
 
 let eventDate = eventTicket.displayDate.bind(eventTicket, "12th July");
-console.log(eventDate());
+console.log(eventDate()); // The Hackathon is being held on 12th July
 
 
 //call, apply
@@ -333,10 +397,12 @@ function displayItemDetails(owner){
 // call
 let callItemDetails = displayItemDetails.call(laptop, "Fran");
 console.log(callItemDetails);
+/* A ThinkPad, Lenovo was issued to Fran. Processor Details: CORE i5 8th Gen */
 
 //apply
 let applyItemDetails = displayItemDetails.apply(laptop, ["Fran"]);
 console.log(applyItemDetails);
+/* A ThinkPad, Lenovo was issued to Fran. Processor Details: CORE i5 8th Gen */
 
 //Note that when using the apply() function the parameter must be placed in an array. Call() accepts both an array of parameters and a parameter itself.
 
@@ -380,6 +446,12 @@ let CoffeeMachine=(callbackWater,callbackSugar,callbackCoffee)=>{
  let result2=calculator(4,6,Product);
  
  console.log(result2);
+ /* 
+water is boiling
+added coffee
+added sugar in water
+Your coffee is ready now
+ */
  
  
  
@@ -396,3 +468,7 @@ let CoffeeMachine=(callbackWater,callbackSugar,callbackCoffee)=>{
  return sum;
  };
  console.log(sum([3,5,78,4,3,6555677,8,9],SumAllitems));
+ /* 
+ 24
+ 6555787
+ */
