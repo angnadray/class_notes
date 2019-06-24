@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM Basics</title>
+</head>
+<body>
+    <h1 id="heading">Document Object Model > DOM</h1>
+    <h2>What is the DOM?</h2>
+    <p id="para">The Document Object Model (DOM) is a programming interface for HTML and XML documents.
+        It represents the page so that programs can change the document structure, style, and content.
+    </p>
+    <p>A Web page is a document. This document can be either displayed in the browser window or 
+        as the HTML source. But it is the same document in both cases. The Document Object Model 
+        (DOM) represents that same document so it can be manipulated. The DOM is an object-oriented 
+        representation of the web page, which can be modified with a scripting language such as 
+        JavaScript.</p>
+    <div id="bod">
+    <h2>Core Interfaces in the DOM</h2>
+    <p>
+            The following is a brief list of common APIs in web and XML page scripting using the DOM.
+
+            document.getElementById(id)
+            document.getElementsByTagName(name)
+            document.createElement(name)
+            parentNode.appendChild(node)
+            element.innerHTML
+            element.style.left
+            element.setAttribute()
+            element.getAttribute()
+            element.addEventListener()
+            window.content
+            window.onload
+            console.log()
+            window.scrollTo()
+            <p>Document and window objects are the objects whose interfaces you generally use most 
+                often in DOM programming. In simple terms, the window object represents something 
+                like the browser, and the document object is the root of the document itself. 
+                Element inherits from the generic Node interface, and together these two interfaces 
+                provide many of the methods and properties you use on individual elements. 
+                These elements may also have specific interfaces for dealing with the kind of data 
+                those elements hold, as in the table object example in the previous section.</p>
+    </p>
+    <h2>Testing the DOM API</h2>
+    <p>This document provides samples for every interface that you can use in your own web 
+        development. In some cases, the samples are complete HTML pages, with the DOM access 
+        in a script element, the interface (e.g, buttons) necessary to fire up the script in a form, 
+        and the HTML elements upon which the DOM operates listed as well. When this is the case, 
+        you can cut and paste the example into a new HTML document, save it, and run the example 
+        from the browser.</p>
+    <h2>Some Title</h2>
+    </div>
+</body>
+<script src="domBasics.js"></script>
+</html>
