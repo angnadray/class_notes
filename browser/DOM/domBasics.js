@@ -53,3 +53,10 @@ document.body.appendChild(div);
 
 // element.innerHTML
 
+// getElementsByClassName() Method
+
+function newPar(parColor) {
+    let para = document.getElementsByClassName('par')
+    para.style.color = parColor;
+}
+changeColor('blue');

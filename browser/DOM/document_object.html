@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document Object</title>
+</head>
+<body>
+    <h1>Document Object</h1>
+    <h2>Write</h2>
+    <p>The write() method writes HTML expressions or JavaScript code to a document.</p>
+    <p>The write() method is mostly used for testing: If it is used after an 
+        HTML document is fully loaded, it will delete all existing HTML.</p>
+    <p>Using document.write() after an HTML document is fully loaded, 
+        will delete all existing HTML.</p>
+
+    <h2>getElementsByTagName() Method</h2>
+    <p>Get all elements in the document with the specified tag name:</p>
+    <p>Had to loop through all the elements with that tag. See in DOM_basics js document </p>
+
+    <h2>getElementsByClassName() Method</h2>
+    <p></p>
+    <script>
+        // WRITE
+        /* Write HTML elements with text directly to the HTML document: */
+        document.write("Hello World!");
+        document.write("<h1>Hello World!</h1><p>Have a nice day!</p>");
+        document.write(Date());
+    </script>
+</body>
+</html>
