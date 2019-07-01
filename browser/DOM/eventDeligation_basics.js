@@ -20,6 +20,4 @@ document.getElementById('myDiv').addEventListener('click', function(event){
 
     console.log('event', event);
     
-    
-
 })
